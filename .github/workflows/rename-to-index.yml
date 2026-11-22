@@ -1,0 +1,17 @@
+name: Rename file to index.html
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  rename:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Replace index.html with new version
+        run: |
+          git config user.name "Esteban1092"
+          git config user.email "esteban1092@users.noreply.github.com"
+          git mv -f demo-web-clinica-dental.html index.html
+          git commit -m "Replace index.html with new version without emojis"
+          git push
