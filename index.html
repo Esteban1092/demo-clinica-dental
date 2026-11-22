@@ -86,14 +86,18 @@ section{padding:64px 0}
 @media(min-width:980px){ .treat-grid{grid-template-columns:1fr 1fr 1fr 1fr} }
 .treat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;display:flex;flex-direction:column;gap:8px}
 .treat:hover{border-color:var(--peach)}
-.treat .ic{width:46px;height:46px;border-radius:14px;background:var(--ice2);display:grid;place-items:center;font-size:22px}
+.treat .ic{width:46px;height:46px;border-radius:14px;background:var(--ice2);display:grid;place-items:center;color:var(--teal)}
+.treat .ic svg{width:24px;height:24px}
+.btn svg{width:18px;height:18px;flex:none}
+.wa-float svg{width:20px;height:20px;flex:none}
+.pin-ic{width:15px;height:15px;display:inline-block;vertical-align:-2px}
 .treat h3{margin:2px 0 0;font-size:17px}
 .treat p{margin:0;color:var(--muted);font-size:14px;flex:1}
 .treat .cot{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--teal);background:var(--ice2);align-self:flex-start;padding:5px 9px;border-radius:999px}
 @media (prefers-color-scheme: dark){ .treat .cot{color:#fff} }
 .treat a{font-weight:700;font-size:14px;color:var(--wa-dark);text-decoration:none;padding:6px 0}
 .treat.urgent{background:var(--teal);color:#fff;border-color:var(--teal)}
-.treat.urgent p{color:#BFDCD8}.treat.urgent .ic{background:rgba(255,255,255,.14)}.treat.urgent a{color:var(--peach)}.treat.urgent .cot{background:rgba(255,255,255,.14);color:#fff}
+.treat.urgent p{color:#BFDCD8}.treat.urgent .ic{background:rgba(255,255,255,.14);color:var(--peach)}.treat.urgent a{color:var(--peach)}.treat.urgent .cot{background:rgba(255,255,255,.14);color:#fff}
 /* Quiz */
 .quiz-band{background:var(--teal-deep);color:#fff;border-radius:32px;padding:36px 24px;position:relative;overflow:hidden}
 @media(min-width:800px){ .quiz-band{padding:48px 52px} }
@@ -189,7 +193,7 @@ footer p,footer a{font-size:14.5px;color:#C9E2DE}
 <div class="demo-strip">Página <b>DEMO</b> · Ejemplo de cómo se vería la web de tu clínica · Hecha por WEBS</div>
 
 <div class="nav"><div class="nav-in">
-  <div class="logo"><span class="logo-mark">✚</span><span>Tu Clínica Dental<small>Demo · Odontología integral</small></span></div>
+  <div class="logo"><span class="logo-mark"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M9.2 3h5.6v6.2H21v5.6h-6.2V21H9.2v-6.2H3V9.2h6.2V3z"/></svg></span><span>Tu Clínica Dental<small>Demo · Odontología integral</small></span></div>
   <nav class="nav-links"><a href="#tratamientos">Tratamientos</a><a href="#quiz">Quiz</a><a href="#resultados">Resultados</a><a href="#opiniones">Opiniones</a><a href="#faq">Preguntas</a></nav>
   <a class="btn btn-wa btn-sm" href="https://wa.me/525500000000?text=Hola%2C%20quiero%20agendar%20una%20cita%20en%20Tu%20Cl%C3%ADnica%20Dental" target="_blank" rel="noopener">Agendar cita</a>
 </div></div>
@@ -200,7 +204,7 @@ footer p,footer a{font-size:14.5px;color:#C9E2DE}
     <h1>Tu sonrisa, <em>sin miedo</em> al dentista.</h1>
     <p class="lead">Limpieza, blanqueamiento, ortodoncia e implantes en un solo lugar. Agenda tu valoración por WhatsApp en menos de un minuto — te cotizamos sin compromiso.</p>
     <div class="hero-ctas">
-      <a class="btn btn-wa" href="https://wa.me/525500000000?text=Hola%2C%20quiero%20agendar%20una%20valoraci%C3%B3n%20en%20Tu%20Cl%C3%ADnica%20Dental" target="_blank" rel="noopener">💬 Agendar por WhatsApp</a>
+      <a class="btn btn-wa" href="https://wa.me/525500000000?text=Hola%2C%20quiero%20agendar%20una%20valoraci%C3%B3n%20en%20Tu%20Cl%C3%ADnica%20Dental" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Agendar por WhatsApp</a>
       <a class="btn btn-ghost" href="#quiz">¿Qué tratamiento necesito?</a>
     </div>
     <div class="hero-meta"><span>Valoración y diagnóstico</span><span>Atención para niños y adultos</span><span>Urgencias el mismo día</span></div>
@@ -232,12 +236,12 @@ footer p,footer a{font-size:14.5px;color:#C9E2DE}
     <p class="sub">Responde 3 preguntas y te recomendamos el tratamiento ideal. Al final armas tu mensaje y lo mandas por WhatsApp con un toque.</p>
     <div class="q-prog"><i id="p1" class="fill"></i><i id="p2"></i><i id="p3"></i></div>
     <div class="q-step on" data-step="1"><h3>1. ¿Qué te preocupa más de tu sonrisa?</h3><div class="q-opts">
-      <button class="q-opt" data-q="preocupa" data-v="Mis dientes se ven amarillos o manchados">🦷 Se ven amarillos o manchados</button>
-      <button class="q-opt" data-q="preocupa" data-v="Tengo los dientes chuecos o separados">😬 Están chuecos o separados</button>
-      <button class="q-opt" data-q="preocupa" data-v="Me falta uno o varios dientes">🕳️ Me falta uno o varios dientes</button>
-      <button class="q-opt" data-q="preocupa" data-v="Me duele un diente o tengo sensibilidad">⚡ Me duele / tengo sensibilidad</button>
-      <button class="q-opt" data-q="preocupa" data-v="Quiero una sonrisa completamente nueva">✨ Quiero renovar toda mi sonrisa</button>
-      <button class="q-opt" data-q="preocupa" data-v="Es para mi hijo/a, revisión infantil">🧒 Es para mi hijo/a</button>
+      <button class="q-opt" data-q="preocupa" data-v="Mis dientes se ven amarillos o manchados">Se ven amarillos o manchados</button>
+      <button class="q-opt" data-q="preocupa" data-v="Tengo los dientes chuecos o separados">Están chuecos o separados</button>
+      <button class="q-opt" data-q="preocupa" data-v="Me falta uno o varios dientes">Me falta uno o varios dientes</button>
+      <button class="q-opt" data-q="preocupa" data-v="Me duele un diente o tengo sensibilidad">Me duele / tengo sensibilidad</button>
+      <button class="q-opt" data-q="preocupa" data-v="Quiero una sonrisa completamente nueva">Quiero renovar toda mi sonrisa</button>
+      <button class="q-opt" data-q="preocupa" data-v="Es para mi hijo/a, revisión infantil">Es para mi hijo/a</button>
     </div></div>
     <div class="q-step" data-step="2"><h3>2. ¿Desde cuándo te pasa?</h3><div class="q-opts">
       <button class="q-opt" data-q="tiempo" data-v="Empezó hace poco, es reciente">Hace poco, es reciente</button>
@@ -255,7 +259,7 @@ footer p,footer a{font-size:14.5px;color:#C9E2DE}
       <span class="pill">Tu recomendación</span>
       <div class="rec" id="qRec" style="margin-top:10px">Limpieza dental</div>
       <p id="qWhy"></p>
-      <a class="btn btn-wa" id="qWa" href="#" target="_blank" rel="noopener">💬 Pedir cotización por WhatsApp</a>
+      <a class="btn btn-wa" id="qWa" href="#" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Pedir cotización por WhatsApp</a>
       <div><button class="linklike" id="qRestart" style="color:var(--muted)">↺ Volver a hacer el quiz</button></div>
     </div>
     <button class="linklike" id="qBack" style="display:none">← Pregunta anterior</button>
@@ -282,7 +286,7 @@ footer p,footer a{font-size:14.5px;color:#C9E2DE}
       <div class="field"><label for="pName">4 · Tu nombre</label><input type="text" id="pName" placeholder="Ej. María González" autocomplete="name"></div>
     </div>
     <div class="summary">
-      <h3>Tu mensaje listo ✉️</h3>
+      <h3>Tu mensaje listo</h3>
       <div class="msg" id="msgPreview">Elige un tratamiento, un día y una hora para armar tu cita…</div>
       <a class="btn btn-wa" id="sendWa" href="#" target="_blank" rel="noopener">Enviar por WhatsApp →</a>
       <div class="small">Se abre WhatsApp con el mensaje ya escrito. Solo le das enviar.</div>
@@ -319,8 +323,8 @@ footer p,footer a{font-size:14.5px;color:#C9E2DE}
       <tr><td>Sábado</td><td>9:00 – 15:00 h</td></tr>
       <tr><td>Domingo</td><td>Urgencias por WhatsApp</td></tr>
     </table>
-    <p style="color:var(--muted);font-size:14px">📍 Dirección de ejemplo — en tu web va la dirección real de tu clínica, con mapa y botón de cómo llegar.</p>
-    <a class="btn btn-teal" style="width:100%" href="https://wa.me/525500000000?text=Hola%2C%20tengo%20una%20urgencia%20dental" target="_blank" rel="noopener">⚡ Tengo una urgencia</a>
+    <p style="color:var(--muted);font-size:14px"><svg class="pin-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5s-7.2-5.6-7.2-11.2a7.2 7.2 0 0 1 14.4 0c0 5.6-7.2 11.2-7.2 11.2z"/><circle cx="12" cy="10.2" r="2.6"/></svg> Dirección de ejemplo — en tu web va la dirección real de tu clínica, con mapa y botón de cómo llegar.</p>
+    <a class="btn btn-teal" style="width:100%" href="https://wa.me/525500000000?text=Hola%2C%20tengo%20una%20urgencia%20dental" target="_blank" rel="noopener">Tengo una urgencia</a>
   </div>
 </div></div></section>
 
@@ -330,7 +334,7 @@ footer p,footer a{font-size:14.5px;color:#C9E2DE}
   <div><h4>¿Quieres una así?</h4><p>Web en 24–48 h, sin anticipo: pagas cuando la veas terminada, con tu nombre, tus fotos y tu menú de tratamientos.</p><a href="#cita">Armar mi cita de ejemplo →</a></div>
 </div></div></footer>
 
-<a class="wa-float" href="https://wa.me/525500000000?text=Hola%2C%20quiero%20informes%20de%20Tu%20Cl%C3%ADnica%20Dental" target="_blank" rel="noopener">💬 WhatsApp</a>
+<a class="wa-float" href="https://wa.me/525500000000?text=Hola%2C%20quiero%20informes%20de%20Tu%20Cl%C3%ADnica%20Dental" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.497.1-.198.05-.371-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp</a>
 
 <script>
 var WA='525500000000';
@@ -338,14 +342,14 @@ function waLink(text){return 'https://wa.me/'+WA+'?text='+encodeURIComponent(tex
 
 /* ---------- Treatments ---------- */
 var treatments=[
- {n:'Limpieza dental',e:'🪥',d:'Retira sarro y manchas, previene caries y deja tu boca fresca. Ideal cada 6 meses.'},
- {n:'Blanqueamiento',e:'✨',d:'Aclara varios tonos el color de tus dientes de forma segura y sin dañar el esmalte.'},
- {n:'Ortodoncia',e:'😬',d:'Brackets para alinear tus dientes y corregir tu mordida, en niños y adultos.'},
- {n:'Alineadores invisibles',e:'👻',d:'La forma discreta de enderezar tu sonrisa: transparentes, removibles y cómodos.'},
- {n:'Implantes dentales',e:'🔩',d:'Recupera dientes perdidos con una raíz artificial fija, natural y duradera.'},
- {n:'Diseño de sonrisa',e:'💎',d:'Plan digital completo: forma, color y proporción de tus dientes a tu medida.'},
- {n:'Odontopediatría',e:'🧒',d:'Cuidado dental para niños sin miedo: revisión, limpieza, selladores y caries.'},
- {n:'Urgencias dentales',e:'⚡',d:'Dolor, diente roto o inflamación: atención el mismo día. Escríbenos ya.',urgent:true}
+ {n:'Limpieza dental',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5.6c-1.1-1-2.6-1.5-4-1.4-2.3.2-3.9 1.9-3.7 4.2.1 1.2.6 2.2 1 3.3.4 1.2.6 2.6.8 4 .2 1.2.4 2.8 1.6 2.8 1.4 0 1.4-2.2 2.3-3.5.3-.4.6-.6 1-.6s.7.2 1 .6c.9 1.3.9 3.5 2.3 3.5 1.2 0 1.4-1.6 1.6-2.8.2-1.4.4-2.8.8-4 .4-1.1.9-2.1 1-3.3.2-2.3-1.4-4-3.7-4.2-1.4-.1-2.9.4-4 1.4z"/></svg>',d:'Retira sarro y manchas, previene caries y deja tu boca fresca. Ideal cada 6 meses.'},
+ {n:'Blanqueamiento',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5l1.7 4.9 4.9 1.7-4.9 1.7L12 16.7l-1.7-4.9-4.9-1.7 4.9-1.7L12 3.5z"/><path d="M18.6 15.4l.8 2.3 2.3.8-2.3.8-.8 2.3-.8-2.3-2.3-.8 2.3-.8.8-2.3z"/></svg>',d:'Aclara varios tonos el color de tus dientes de forma segura y sin dañar el esmalte.'},
+ {n:'Ortodoncia',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.6" y="9" width="4.4" height="6" rx="1.1"/><rect x="9.8" y="9" width="4.4" height="6" rx="1.1"/><rect x="16" y="9" width="4.4" height="6" rx="1.1"/><path d="M2 12h20"/></svg>',d:'Brackets para alinear tus dientes y corregir tu mordida, en niños y adultos.'},
+ {n:'Alineadores invisibles',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4.5h16V9a8 8 0 0 1-16 0V4.5z"/><path d="M8.2 4.5v3.8M12 4.5v4.6M15.8 4.5v3.8"/></svg>',d:'La forma discreta de enderezar tu sonrisa: transparentes, removibles y cómodos.'},
+ {n:'Implantes dentales',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l-.8 4.5H8.8L8 3z"/><path d="M9.3 7.5h5.4M9.9 10.8h4.2M10.4 14h3.2"/><path d="M9.3 7.5l.6 3.3.5 3.2 1.6 6.5L13.6 14l.5-3.2.6-3.3"/></svg>',d:'Recupera dientes perdidos con una raíz artificial fija, natural y duradera.'},
+ {n:'Diseño de sonrisa',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3.5h10l3.4 4.7L12 20.5 3.6 8.2 7 3.5z"/><path d="M3.6 8.2h16.8"/><path d="M9.6 8.2L12 20.5l2.4-12.3"/><path d="M7 3.5l2.6 4.7L12 3.5l2.4 4.7L17 3.5"/></svg>',d:'Plan digital completo: forma, color y proporción de tus dientes a tu medida.'},
+ {n:'Odontopediatría',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.6"/><path d="M8.4 14.2c1 1.3 2.2 1.9 3.6 1.9s2.6-.6 3.6-1.9"/><path d="M9.2 9.8h.01M14.8 9.8h.01" stroke-width="2.6"/></svg>',d:'Cuidado dental para niños sin miedo: revisión, limpieza, selladores y caries.'},
+ {n:'Urgencias dentales',e:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5L4.8 13.6h6L9.9 21.5l8.4-11.4h-6.1l.8-7.6z"/></svg>',d:'Dolor, diente roto o inflamación: atención el mismo día. Escríbenos ya.',urgent:true}
 ];
 var tg=document.getElementById('treatGrid');
 treatments.forEach(function(t){
